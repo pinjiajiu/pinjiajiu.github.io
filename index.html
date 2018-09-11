@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title title="中国教育信息网——在线学习平台">中国教育信息网——在线学习平台</title>
+	<link rel="shortcut icon" type="text/css" href="./images/pic.png"><!-- 制作title上的小图标 -->
+	<link rel="stylesheet" href="./bs/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="./bs/css/main.css">
+	<link rel="stylesheet" type="text/css" href="./bs/css/Carousel.css">
+	<script src='./bs/js/jquery.js'></script>
+	<script src='./bs/js/bootstrap.js'></script>
+	<script src='./bs/js/Carousel.js'></script>
+</head>
+<body>
+<div class="Navbar">
+	<div class="container">
+		<div class="logo"><a href="#"><img src="./images/pic-none.png" alt=""></a></div>
+		<ul class="Navbar-ul1 row">
+			<li class="col-md-2"><a href="">首页</a></li>
+			<li class="col-md-2"><a href="">课程</a></li>
+			<li class="col-md-2"><a href="">资讯</a></li>
+			<li class="col-md-2"><a href="">加盟</a></li>
+			<li class="col-md-2"><a href="">咨询</a></li>
+			<li class="col-md-2" style="font-size: 18px;"><a href="#" class="glyphicon glyphicon-menu-hamburger" data-toggle="dropdown"></a>
+			<ul class="dropdown-menu" style="left: 15px">
+			    <li><a href="#">题库</a></li>
+			    <li class="divider"></li>
+			    <li><a href="javascript:">教师团队</a></li>
+			    <li class="divider"></li>
+			    <li><a href="#">关于我们</a></li>
+		  	</ul>
+		  </li>
+		</ul>
+		<ul class="Navbar-ul2 row">
+			<li class="col-md-6">
+				<input type="text" name="" class="form-control" placeholder="搜索课程">
+				<!-- form-control-feedback使小图标在输入框中显示 -->
+				<span class="glyphicon glyphicon-search form-control-feedback"></span>
+			</li>
+			<li class="col-md-2 login" data-target="#myModal">登录</li>
+			<div class="modal fade" id="myModal">
+			  <div class="modal-dialog modal-sm">
+			    <div class="modal-content">
+			      <div class="modal-header"><!-- 头部 -->
+			        <button type="button" class="close hmodal"><span>&times;</span></button><!-- 关闭符号 -->
+			        <h4 class="modal-title text-center" id="myModalLabel" style="color: #777">登录账号</h4>
+			      </div>
+			      <div class="modal-body"><!-- 体部 -->
+					<form action="">
+						<div class="form-group">
+							<input type="text" class="form-control" placeholder="用户名/手机号" maxlength="8">
+						</div>
+						<div class="form-group">
+							<input type="text" class="form-control" placeholder="密码" maxlength="16">
+						</div>
+						<div class="form-group">
+							<input type="button" class="btn btn-info form-control" value='登录'>
+						</div>
+					</form>
+			      </div>
+			      <div class="modal-footer"><!-- 底部 -->
+			        <a class="btn">找回密码</a>
+			        <span>|</span>
+			        <a class="btn">注册账号</a>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+			<li class="col-md-2 register">注册</li>
+		</ul>
+	</div>
+</div>
+<div class="Carousel">
+	<div class="Carousel-img">
+		<img src="./images/banner1.jpg" height="444px" width='100%'>
+		<img src="./images/banner2.jpg" height="444px" width='100%'>
+		<img src="./images/banner3.jpg" height="444px" width='100%'>
+		<img src="./images/banner4.jpg" height="444px" width='100%'>
+	</div>
+	<div class="Pointer-left"><</div>
+	<div class="Pointer-right">></div>
+	<div class="Carousel-dot">
+		<ul>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+	</div>
+</div>
+<div class="container">
+	<div class="title1">
+		<div class="title-header">
+		<div class="row">
+			<p class="col-md-5 title-line"></p>
+			<h3 class="col-md-2 text-center">热门课程</h3>
+			<p class="col-md-5 title-line"></p>
+		</div>
+		</div>
+		<div class="title-content">
+			<div class="row">
+				<div class="col-md-3">
+					<div class="thumbnail">
+					<img src="./images/title-1.jpg">
+						<div class="caption">
+						<h4>高一课程</h4>
+						<a href="#"> 高一上、下学期全科同步课程</a>
+						<p><span class="glyphicon glyphicon-user"> 2856</span><span class="glyphicon glyphicon-comment"> O</span><span class="content-price">￥1888.0</span></p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="thumbnail">
+					<img src="./images/title-2.jpg">
+						<div class="caption">
+						<h4>高二课程</h4>
+						<a href="#"> 高二上、下学期全科同步课程</a>
+						<p><span class="glyphicon glyphicon-user"> 4960</span><span class="glyphicon glyphicon-comment"> O</span><span class="content-price">￥1888.0</span></p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="thumbnail">
+					<img src="./images/title-3.jpg">
+						<div class="caption">
+						<h4>高三课程</h4>
+						<a href="#"> 高三上、下学期全科同步课程</a>
+						<p><span class="glyphicon glyphicon-user"> 1020</span><span class="glyphicon glyphicon-comment"> O</span><span class="content-price">￥1888.0</span></p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="thumbnail">
+					<img src="./images/title-4.jpg">
+						<div class="caption">
+						<h4>综合课程</h4>
+						<a href="#"> 综合基础知识</a>
+						<p><span class="glyphicon glyphicon-user"> 1190</span><span class="glyphicon glyphicon-comment"> O</span><span class="content-price">￥2888.0</span></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="title2">
+		<div class="title-header">
+			<div class="row">
+				<p class="col-md-5 title-line"></p>
+				<h3 class="col-md-2 text-center">精品推荐</h3>
+				<p class="col-md-5 title-line"></p>
+			</div>
+		</div>
+		<div class="title-nav">
+			<div class="row">
+				<div class="col-md-6">
+					<div class="col-md-3">课程分类：</div>
+					<div class="col-md-1 active">小学</div>
+					<div class="col-md-1">初中</div>
+					<div class="col-md-1">高中</div>
+					<div class="col-md-1">培训</div>
+				</div>
+				<div class='text-center col-md-1 col-md-offset-4'><button class="btn btn-default btn-sm">更多<span class="glyphicon glyphicon-menu-right"></span></button> </div>
+			</div>
+		</div>
+		<div class="title-content">
+		<div class="row">
+			<div class="col-md-3">
+				<div class="thumbnail">
+				<img src="./images/xiaoxue1.jpg">
+					<div class="caption">
+					<a href="#"> 小学英语语法</a>
+					<p></p>
+					<p><span class="glyphicon glyphicon-user"> 231</span><span class="glyphicon glyphicon-comment"> O</span><span class="content-price">￥200.0</span></p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="thumbnail">
+				<img src="./images/xiaoxue2.jpg">
+					<div class="caption">
+					<a href="#"> 小学作文写作技巧</a>
+					<p></p>
+					<p><span class="glyphicon glyphicon-user"> 120</span><span class="glyphicon glyphicon-comment"> O</span><span class="content-price">￥200.0</span></p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="thumbnail">
+				<img src="./images/xiaoxue3.jpg">
+					<div class="caption">
+					<a href="#"> 小学分类作文攻略</a>
+					<p></p>
+					<p><span class="glyphicon glyphicon-user"> 230</span><span class="glyphicon glyphicon-comment"> O</span><span class="content-price">￥200.0</span></p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="thumbnail">
+				<img src="./images/xiaoxue4.jpg">
+					<div class="caption">
+					<a href="#"> 跟特级教师学作文</a>
+					<p></p>
+					<p><span class="glyphicon glyphicon-user"> 176</span><span class="glyphicon glyphicon-comment"> O</span><span class="content-price">￥200.0</span></p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-3">
+				<div class="thumbnail">
+				<img src="./images/xiaoxue5.jpg">
+					<div class="caption">
+					<a href="#" class="">非常作文</a>
+					<p></p>
+					<p><span class="glyphicon glyphicon-user"> 169</span><span class="glyphicon glyphicon-comment"> O</span><span class="content-price">￥200.0</span></p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="thumbnail">
+				<img src="./images/xiaoxue6.jpg">
+					<div class="caption">
+					<a href="#">少儿英语——三级</a>
+					<p></p>
+					<p><span class="glyphicon glyphicon-user"> 154</span><span class="glyphicon glyphicon-comment"> O</span><span class="content-price">￥200.0</span></p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="thumbnail">
+				<img src="./images/xiaoxue7.jpg">
+					<div class="caption">
+					<a href="#">少儿英语——二级</a>
+					<p></p>
+					<p><span class="glyphicon glyphicon-user"> 451</span><span class="glyphicon glyphicon-comment"> O</span><span class="content-price">￥200.0</span></p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="thumbnail">
+				<img src="./images/xiaoxue8.jpg">
+					<div class="caption">
+					<a href="#">少儿英语——一级</a>
+					<p></p>
+					<p><span class="glyphicon glyphicon-user"> 360</span><span class="glyphicon glyphicon-comment"> O</span><span class="content-price">￥200.0</span></p>
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
+	</div>
+	<div class="title3">
+		<div class="title-header">
+		<div class="row">
+			<p class="col-md-5 title-line"></p>
+			<h3 class="col-md-2 text-center">最新动态</h3>
+			<p class="col-md-5 title-line"></p>
+		</div>
+		</div>
+		<div class="title-nav">
+		<div class="row">
+			<div class="col-md-2"><span class="title3-span"></span><span style="margin-left: 10px">最新资讯</span></div>
+			<div class='text-center col-md-1 col-md-offset-8'><button class="btn btn-default btn-sm">更多<span class="glyphicon glyphicon-menu-right"></span></button></div>
+		</div>
+
+		</div>
+		<hr>
+		<ul class="row">
+	        <li class="col-md-6">
+	            <a href="" title="自考学霸练成记：自考升学不只是纯看书！">自考学霸练成记：自考升学不只是纯看书！</a> <span>11-02</span></li>
+	        <li class=" col-md-6">
+	            <a href="" title="为什么老师是最幸福的职业之一？">为什么老师是最幸福的职业之一？</a>
+	            <span>10-31</span></li>
+	        <li class=" col-md-6">
+	            <a href="" title="教育云时代下如何实现智慧化教学">教育云时代下如何实现智慧化教学</a>
+	            <span>10-30</span></li>
+	        <li class=" col-md-6">
+	            <a href="" title="聚焦十九大：为新时代打call，这些事与你息息相关">聚焦十九大：为新时代打call，这些事与你息息相关</a>
+	            <span>10-20</span></li>
+	        <li class=" col-md-6">
+	            <a href="" title="高学历真的能带来高工资吗？">高学历真的能带来高工资吗？</a>
+	            <span>10-16</span></li>
+	        <li class=" col-md-6">
+	            <a href="" title="含金量最高的十张证书，排名第一名竟然是......">含金量最高的十张证书，排名第一名竟然是......</a>
+	            <span>10-12</span></li>
+	        <li class=" col-md-6">
+	            <a href="" title="第二届中国公考联盟（武汉）峰会完美落幕">第二届中国公考联盟（武汉）峰会完美落幕</a>
+	            <span>09-22</span></li>
+	        <li class=" col-md-6">
+	            <a href="" title="孩子数学不好？怨父母！">孩子数学不好？怨父母！</a>
+	            <span>09-20</span></li>
+	        <li class=" col-md-6">
+	            <a href="" title="农民工一句话成为最好的主题班会课">农民工一句话成为最好的主题班会课</a>
+	            <span>09-19</span></li>
+	        <li class=" col-md-6">
+	            <a href="" title="家长如何处理好与高三生的矛盾？">家长如何处理好与高三生的矛盾？</a>
+	            <span>09-18</span></li>
+	        <li class=" col-md-6">
+	            <a href="" title="成人高考继续教育赶“末班车”？听听教育部怎么说...... ">成人高考继续教育赶“末班车”？听听教育部怎么说...... </a>
+	            <span>09-08</span></li>
+	        <li class=" col-md-6">
+	            <a href="" title="自主招生是馅饼还是鸡肋？">自主招生是馅饼还是鸡肋？</a>
+	           	<span>08-11</span></li>
+	    </ul>
+	</div>
+	<div class="title4">
+		<div class="title-header">
+		<div class="row">
+			<p class="col-md-5 title-line"></p>
+			<h3 class="col-md-2 text-center">名师推荐</h3>
+			<p class="col-md-5 title-line"></p>
+		</div>
+		</div>
+		<div class="title-nav">
+		<div class="row">
+			<div class='text-center col-md-1 col-md-offset-10'><button class="btn btn-default btn-sm">更多<span class="glyphicon glyphicon-menu-right"></span></button></div>
+		</div>
+		</div>
+		<div class="title-content">
+			<div class="row">
+				<div class="col-md-3">
+					<div class="thumbnail">
+						<div class="teacher-header">
+							<div class="teacher-img">
+								<img src="./images/teacher1.jpg" height='100%'>
+							</div>
+							<div class="teacher-content">
+								<h4 class="text-center">吴向天</h4>
+								<p class="text-center">教授</p>
+							</div>
+						</div>
+						<div class="caption">
+							<span style="color: #444">专注银行20年、出版著作...</span>
+							<span style="display: none;"><button class="btn btn-info btn-sm">关注</button>
+							<button class="btn btn-info btn-sm">私信</button></span>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="thumbnail">
+						<div class="teacher-header">
+							<div class="teacher-img">
+								<img src="./images/teacher2.jpg" height='100%'>
+							</div>
+							<div class="teacher-content">
+								<h4 class="text-center">王楠</h4>
+								<p class="text-center">教育教学</p>
+							</div>
+						</div>
+						<div class="caption">
+							<span style="color: #444">从事教育工作多年，对教...</span>
+							<span style="display: none;"><button class="btn btn-info btn-sm">关注</button>
+							<button class="btn btn-info btn-sm">私信</button></span>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="thumbnail">
+						<div class="teacher-header">
+							<div class="teacher-img">
+								<img src="./images/teacher3.jpg" height='100%'>
+							</div>
+							<div class="teacher-content">
+								<h4 class="text-center">王楠</h4>
+								<p class="text-center">教育科学</p>
+							</div>
+						</div>
+						<div class="caption">
+							<span style="color: #444">美国麻省理工学院/清华大...</span>
+							<span style="display: none;"><button class="btn btn-info btn-sm">关注</button>
+							<button class="btn btn-info btn-sm">私信</button></span>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="thumbnail">
+						<div class="teacher-header">
+							<div class="teacher-img">
+								<img src="./images/teacher4.jpg" height='100%'>
+							</div>
+							<div class="teacher-content">
+								<h4 class="text-center">李辉</h4>
+								<p class="text-center">助教、讲师</p>
+							</div>
+						</div>
+						<div class="caption">
+							<span style="color: #444">ACI注册国际高级礼仪培训...</span>
+							<span style="display: none;"><button class="btn btn-info btn-sm">关注</button>
+							<button class="btn btn-info btn-sm">私信</button></span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="footer">
+	<div class="footer-top">
+		<img src="./images/footer-backg.jpg" alt="" width='100%'>
+	</div>
+	<div class="footer-bottom">
+		<div class="col-md-4 col-md-offset-4">
+			<p class="col-md-12">鄂ICP备15014024号-1</p>
+			<p class="col-md-12">课件内容版权均归 中国教育信息网 所有</p>
+			<p class="col-md-12">Powered by Ls365 v8.0.7 ©2000-2017</p>
+		</div>
+	</div>
+</div>
+</body>
+<script type="text/javascript">
+$('.Navbar-ul2 .col-md-6 input').focus(function(){
+    $(this).attr({'placeholder':''}).animate({ width: '160px'});
+}).blur(function () {
+    $(this).attr({'placeholder':'搜索课程'}).animate({ width: '100px' });
+});
+$('.Navbar-ul1 .dropdown-menu li').eq(2).click(function(){
+		$(window).scrollTop(1900);
+});
+$('.login').click(function () {
+	$('#myModal').modal('show');
+})
+$('.hmodal').click(function(){
+	$('#myModal').modal('hide');
+})
+$('.thumbnail').css({'position':'relative'});
+$('.title4 .thumbnail').hover(function(){
+	 Sind=$(this).index('.title4 .thumbnail')
+	$('.title4 .thumbnail span').eq(2*Sind).stop().hide();
+	$('.title4 .thumbnail span').eq(2*Sind+1).stop().fadeIn(500);
+},function(){
+	$('.title4 .thumbnail span').eq(2*Sind+1).stop().hide();
+	$('.title4 .thumbnail span').eq(2*Sind).stop().fadeIn(500);
+})
+
+</script>
+</html>
