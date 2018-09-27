@@ -1,0 +1,169 @@
+body,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  font-family: 微软雅黑;
+}
+
+.Navbar {
+  border: 0;
+  width: 100%;
+  height: 70px;
+  background: url('../../images/bg.jpg');
+}
+
+.logo {
+  width: 100px;
+  height: 70px;
+  float: left;
+  line-height: 70px;
+  font-size: 0;
+}
+
+.Navbar-ul1 {
+  width: 600px;
+  height: 70px;
+  float: left;
+  list-style-type: none;
+}
+
+.Navbar-ul1 .col-md-2>a {
+  color: #333;
+}
+
+.Navbar-ul1>li {
+  height: 70px;
+  float: left;
+  line-height: 70px;
+  font-size: 16px;
+  padding: 0;
+  text-align: center
+}
+
+.Navbar-ul2 {
+  width: 300px;
+  height: 70px;
+  float: right;
+  list-style-type: none;
+  position: relative;
+}
+
+.Navbar-ul2 .col-md-6 input {
+  position: absolute;
+  width: 100px;
+  top: 20px;
+  right: 35px;
+  border-radius: 30px;
+}
+
+.form-control-feedback {
+  width: 100px;
+  margin: 20px 0;
+}
+
+.Navbar-ul2 li {
+  line-height: 70px;
+  font-size: 16px;
+}
+
+.Navbar-ul2 .col-md-2 {
+  padding: 0px;
+}
+
+.title-line {
+  height: 35px;
+  border-bottom: solid 1px #ddd;
+}
+
+.title-content span {
+  margin-top: 10px;
+  margin-right: 10px;
+  color: #aaa;
+  line-height: 14px;
+}
+
+.content-price {
+  float: right;
+  color: #ee7063!important;
+}
+
+.title-nav {
+  position: relative;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  line-height: 40px;
+}
+
+.title-nav .col-md-1 {
+  text-align: center;
+  padding-left: 7px;
+  padding-right: 7px;
+  margin-right: 5px;
+}
+
+.active {
+  border-radius: 10px;
+  background: #4ABBFA;
+  color: #fff;
+}
+
+.thumbnail {
+  position: relative;
+  bottom: 0px;
+  box-shadow: 0px 7px 8px 3px rgba(200, 200, 200, 0);
+  transition: box-shadow 500ms, bottom 500ms;
+  -moz-transition: box-shadow 500ms, bottom 500ms;
+  /* Firefox 4 */
+  -webkit-transition: box-shadow 500ms, bottom 500ms;
+  /* Safari and Chrome */
+  -o-transition: box-shadow 500ms, bottom 500ms;
+  /* Opera */
+}
+
+.thumbnail:hover {
+  box-shadow: 0px 7px 8px 3px rgba(200, 200, 200, 0.7);
+  bottom: 10px;
+}
+
+.breadcrumb{
+  background: #fff;
+  margin-top: 30px;
+  padding: 0;
+  padding-left: 23px;
+  background: url('../../images/导航_首页.png') no-repeat;
+  background-size: 18px 18px;
+}
+
+h3.page-header{
+  margin-top: 10px;
+}
+
+.footer {
+  width: 100%;
+  background: #ccc;
+}
+
+.footer-top {
+  width: 100%;
+}
+
+.footer-bottom {
+  width: 100%;
+  height: 90px;
+  background: #212121;
+  padding: 10px;
+}
+
+.footer-bottom p {
+  margin-bottom: 0;
+  text-align: center;
+  color: #D7D7D7;
+}
+
+.footer-bottom p:last-child {
+  color: #666;
+}

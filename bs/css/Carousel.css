@@ -3,7 +3,6 @@
 		height: 444px;
 		background: #ccc;
 		position: relative;
-		cursor: pointer;
 		}
 		.Carousel-img{
 			width: 100%;
@@ -14,31 +13,20 @@
 			top: 0;
 			left: 0;
 		}
-		.Pointer-left{
-			width: 50px;
+		.Pointer-left,.Pointer-right{
+			width: 30px;
 			height: 50px;
 			line-height: 50px;
 			position: absolute;
 			top: 200px;
-			left: 20px;
-			background: #ccc;
 			opacity: 0.5;
-			text-align: center;
-			border-radius: 50px;
-			font-size: 30px;
+			cursor: pointer;
+		}
+		.Pointer-left{
+			left: 50px;
 		}
 		.Pointer-right{
-			width: 50px;
-			height: 50px;
-			line-height: 50px;
-			position: absolute;
-			top: 200px;
-			right: 20px;
-			font-size: 30px;
-			background: #ccc;
-			opacity: 0.5;
-			text-align: center;
-			border-radius: 50px;
+			right: 50px;
 		}
 		.Carousel-dot ul{
 			width: 110px;
@@ -50,9 +38,9 @@
 		.Carousel-dot li{
 			width: 12px;
 			height: 12px;
-			border-radius:6px;         
+			border-radius:6px;
 			float: left;
 			list-style: none;
-			margin-right: 15px; 
+			margin-right: 15px;
 			background: #fff;
 		}
