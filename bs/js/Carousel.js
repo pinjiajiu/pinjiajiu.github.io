@@ -1,16 +1,17 @@
 $(function(){
 	var oindex=0;
+	var animated=false;
 	$('.Carousel-dot ul li').eq(0).attr('style','background:#f00');
 	$('.Carousel-img img').eq(0).css({'opacity':1});
 	$('.Carousel-img img').not($('.Carousel-img img').eq(0)).css({'opacity':0});
 	$('.Pointer-left,.Pointer-right').hover(
 		function(){
-			$(this).stop().animate({
+			$(this).stop(true,true).animate({
 				'opacity':0.9
 			});
 		},
 		function(){
-			$(this).stop().animate({
+			$(this).stop(true,true).animate({
 				'opacity':0.5
 			});
 		});
@@ -18,12 +19,12 @@ $(function(){
 		Brun();
 	},3000);
 	$('.Pointer-right').click(function(){
-		Brun();
+			Brun();
 	});
-	$('.Pointer-right').mouseenter(function(){
+	$('.Pointer-right').mouseover(function(){
 		clearInterval(bStart);
 	})
-	$('.Pointer-right').mouseout(function(){
+	$('.Pointer-right').mouseleave(function(){
 		bStart=setInterval(function(){
 			Brun();
 		},3000);
@@ -35,10 +36,10 @@ $(function(){
 		}
 		oindexRun();
 	});
-	$('.Pointer-left').mouseenter(function(){
+	$('.Pointer-left').mouseover(function(){
 		clearInterval(bStart);
 	})
-	$('.Pointer-left').mouseout(function(){
+	$('.Pointer-left').mouseleave(function(){
 		bStart=setInterval(function(){
 			Brun();
 		},3000);
@@ -47,10 +48,10 @@ $(function(){
 			oindex=$(this).index();
 			$(this).attr('style','background:#f00');
 			$('.Carousel-dot li').not($(this)).removeAttr('style','background:#f00');
-			$('.Carousel-img img').eq(oindex).stop().animate({
+			$('.Carousel-img img').eq(oindex).stop(true,true).animate({
 				opacity:1
 			},300);
-			$('.Carousel-img img').eq(oindex).siblings().stop().animate({
+			$('.Carousel-img img').eq(oindex).siblings().stop(true,true).animate({
 				opacity:0
 			},300);
 			clearInterval(bStart);
@@ -60,21 +61,24 @@ $(function(){
 			Brun();
 		},3000);
 	});
-	function Brun(){
+	function Brun(animated){
 			oindex++;
 			if(oindex>1){
 				oindex=0;
 			}
-			oindexRun();
-		}
+			if(!animated){
+				oindexRun();
+			}
+	}
 	function oindexRun(){
-		$('.Carousel-img img').eq(oindex).stop().animate({
-			opacity:1
-		},300);
-		$('.Carousel-img img').eq(oindex).siblings().stop().animate({
-			opacity:0
-		},300);
-		$('.Carousel-dot li').eq(oindex).attr('style','background:#f00');
-		$('.Carousel-dot li').not($('.Carousel-dot li').eq(oindex)).removeAttr('style','background:#f00');
+				animated=true;
+				$('.Carousel-img img').eq(oindex).stop(true,true).animate({
+					opacity:1
+				},500);
+				$('.Carousel-img img').eq(oindex).siblings().stop(true,true).animate({
+					opacity:0
+				},500);
+				$('.Carousel-dot li').eq(oindex).attr('style','background:#f00');
+				$('.Carousel-dot li').not($('.Carousel-dot li').eq(oindex)).removeAttr('style','background:#f00');
 	}
 });
