@@ -32,7 +32,7 @@ $(function(){
 	$('.Pointer-left').click(function(){
 		oindex--;
 		if(oindex<0){
-			oindex=1;
+			oindex=2;
 		}
 		oindexRun();
 	});
@@ -63,7 +63,7 @@ $(function(){
 	});
 	function Brun(animated){
 			oindex++;
-			if(oindex>1){
+			if(oindex>2){
 				oindex=0;
 			}
 			if(!animated){

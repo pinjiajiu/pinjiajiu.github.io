@@ -8,12 +8,17 @@ li {
 * {
   font-family: 微软雅黑;
 }
-
+a {
+  color: #8f0002;
+}
+body{
+  background: url('../../images/bg.jpg');
+}
 .Navbar {
   border: 0;
   width: 100%;
   height: 70px;
-  background: url('../../images/bg.jpg');
+  background: url('../../images/bg-0051.gif');
 }
 
 .logo {
@@ -29,10 +34,11 @@ li {
   height: 70px;
   float: left;
   list-style-type: none;
+
 }
 
 .Navbar-ul1 .col-md-2>a {
-  color: #333;
+  color: #fafafa;
 }
 
 .Navbar-ul1>li {
@@ -88,7 +94,9 @@ li {
 
 .content-price {
   float: right;
-  color: #ee7063!important;
+  font-weight: bold;
+  font-size:16px;
+  color: #d39f33!important;
 }
 
 .title-nav {
