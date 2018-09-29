@@ -6,6 +6,9 @@ html,body,form,input,span,p,img,ul,ol,li,dl,dt,dd {
 a {
   color: #8f0002;
 }
+a:hover{
+  color:#91593c;
+}
 body{
   font-family: 微软雅黑;
   background: url('../../images/bg.jpg');
