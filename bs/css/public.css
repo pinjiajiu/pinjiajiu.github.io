@@ -1,18 +1,34 @@
-html,body,form,input,span,p,img,ul,ol,li,dl,dt,dd {
-  margin:0;
-  padding:0;
-  border:0;
+html,
+body,
+form,
+input,
+span,
+p,
+img,
+ul,
+ol,
+li,
+dl,
+dt,
+dd {
+  margin: 0;
+  padding: 0;
+  border: 0;
 }
+
 a {
   color: #8f0002;
 }
-a:hover{
-  color:#91593c;
+
+a:hover {
+  color: #91593c;
 }
-body{
+
+body {
   font-family: 微软雅黑;
   background: url('../../images/bg.jpg');
 }
+
 .Navbar {
   border: 0;
   width: 100%;
@@ -33,7 +49,6 @@ body{
   height: 60px;
   float: left;
   list-style-type: none;
-
 }
 
 .Navbar-ul1 .col-md-2>a {
@@ -96,7 +111,7 @@ body{
 .content-price {
   float: right;
   font-weight: bold;
-  font-size:16px;
+  font-size: 16px;
   color: #d39f33!important;
 }
 
@@ -138,7 +153,7 @@ body{
   bottom: 10px;
 }
 
-.breadcrumb{
+.breadcrumb {
   background: #fff;
   margin-top: 30px;
   padding: 0;
@@ -147,7 +162,7 @@ body{
   background-size: 18px 18px;
 }
 
-h3.page-header{
+h3.page-header {
   margin-top: 10px;
 }
 
@@ -172,71 +187,94 @@ h3.page-header{
 .footer-bottom p:last-child {
   color: #666;
 }
-#moquu_top,#moquu_wxin,#moquu_wshare {
-  z-index:2;
-  width:40px;
-  height:40px;
-  right:10px;
-  position:fixed;
-  cursor:pointer;
-  _position:absolute;
-  _bottom:auto;
-  _top:expression(eval(document.documentElement.scrollTop+document.documentElement.clientHeight-this.offsetHeight-(parseInt(this.currentStyle.marginTop,10)||0)-(parseInt(this.currentStyle.marginBottom,10)||0)))
+
+#moquu_top,
+#moquu_wxin,
+#moquu_wshare {
+  z-index: 2;
+  width: 40px;
+  height: 40px;
+  right: 10px;
+  position: fixed;
+  cursor: pointer;
+  _position: absolute;
+  _bottom: auto;
+  _top: expression(eval(document.documentElement.scrollTop+document.documentElement.clientHeight-this.offsetHeight-(parseInt(this.currentStyle.marginTop, 10)||0)-(parseInt(this.currentStyle.marginBottom, 10)||0)))
 }
 
-#moquu_wxin { bottom:140px; right:10px;
+#moquu_wxin {
+  bottom: 140px;
+  right: 10px;
 }
+
 #moquu_wxin a {
-  background:url(../../images/sbtn.png) 0 0px;
-  right:0;
-  float:left;
-  width:40px;
-  height:40px;
-  text-indent:-9999px
-}
-#moquu_wxin a:hover {
-  background:url(../../images/sbtn.png) -40px -0px
-}
-#moquu_wshare {bottom:100px; right:10px;
-}
-#moquu_wshare a {
-  background:url(../../images/sbtn.png) 0 -40px;
-  width:40px;
-  height:40px;
-  right:0;
-  float:left;
-  text-indent:-9999px
-}
-#moquu_wshare a:hover {
-  background:url(../../images/sbtn.png) -40px -40px
+  background: url(../../images/sbtn.png) 0 0px;
+  right: 0;
+  float: left;
+  width: 40px;
+  height: 40px;
+  text-indent: -9999px
 }
 
-.moquu_wxin,.moquu_wshare {
-  position:relative;
-  z-index:2
+#moquu_wxin a:hover {
+  background: url(../../images/sbtn.png) -40px -0px
 }
-.moquu_wxin a:hover .moquu_wxinh,.moquu_wshare a:hover .moquu_wshareh {
-  display:block
+
+#moquu_wshare {
+  bottom: 100px;
+  right: 10px;
 }
+
+#moquu_wshare a {
+  background: url(../../images/sbtn.png) 0 -40px;
+  width: 40px;
+  height: 40px;
+  right: 0;
+  float: left;
+  text-indent: -9999px
+}
+
+#moquu_wshare a:hover {
+  background: url(../../images/sbtn.png) -40px -40px
+}
+
+.moquu_wxin,
+.moquu_wshare {
+  position: relative;
+  z-index: 2
+}
+
+.moquu_wxin a:hover .moquu_wxinh,
+.moquu_wshare a:hover .moquu_wshareh {
+  display: block
+}
+
 .moquu_wxin .moquu_wxinh {
-  position:absolute;
-  display:none;
-  right:40px;
-  bottom:0px;
-  width:93px;
-  height:40px;
-  background:url(../../images/fankui.png) 0 0 no-repeat #ff6060;
-  color:#FFF; border-radius:4px 0 0 4px;
+  position: absolute;
+  display: none;
+  right: 40px;
+  bottom: 0px;
+  width: 93px;
+  height: 40px;
+  background: url(../../images/fankui.png) 0 0 no-repeat #ff6060;
+  color: #FFF;
+  border-radius: 4px 0 0 4px;
 }
+
 .moquu_wshare .moquu_wshareh {
-  position:absolute;
-  display:none;
-  right:44px;
-  bottom:-85px;
-  width:200px;
-  height:260px;
-  background:url(../../images/weixin.jpg) no-repeat;
+  position: absolute;
+  display: none;
+  right: 44px;
+  bottom: -85px;
+  width: 200px;
+  height: 260px;
+  background: url(../../images/weixin.jpg) no-repeat;
   background-size: 100% 100%;
 }
 
-#topcontrol{background:#4c4c4c; height:40px; width:40px; border-radius:4px;}
+#topcontrol {
+  background: #4c4c4c;
+  height: 40px;
+  width: 40px;
+  border-radius: 4px;
+}

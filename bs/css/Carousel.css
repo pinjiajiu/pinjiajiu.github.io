@@ -1,48 +1,60 @@
-.Carousel{
-		width: 100%;
-		height: 400px;
-		background: #ccc;
-		position: relative;
-		}
-		.Carousel-img{
-			width: 100%;
-			height: 400px;
-		}
-		.Carousel-img img{
-			height: 400;
-			width: 100%;
-			position: absolute;
-			top: 0;
-			left: 0;
-		}
-		.Pointer-left,.Pointer-right{
-			width: 30px;
-			height: 50px;
-			line-height: 50px;
-			position: absolute;
-			top: 200px;
-			opacity: 0.5;
-			cursor: pointer;
-		}
-		.Pointer-left{
-			left: 50px;
-		}
-		.Pointer-right{
-			right: 50px;
-		}
-		.Carousel-dot ul{
-			width: 110px;
-			height: 12px;
-			position: absolute;
-			bottom: 25px;
-			left: 45%;
-		}
-		.Carousel-dot li{
-			width: 12px;
-			height: 12px;
-			border-radius:6px;
-			float: left;
-			list-style: none;
-			margin-right: 15px;
-			background: #fff;
-		}
+.Carousel {
+  width: 100%;
+  height: 400px;
+  background: #ccc;
+  position: relative;
+}
+
+.Carousel-img {
+  width: 100%;
+  height: 400px;
+}
+
+.Carousel-img img {
+  height: 400;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.Pointer-left,
+.Pointer-right {
+  width: 24px;
+  height: 50px;
+  position: absolute;
+  top: 185px;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.Pointer-left img,
+.Pointer-right img {
+  height: 50px;
+}
+
+.Pointer-left {
+  left: 50px;
+}
+
+.Pointer-right {
+  right: 50px;
+}
+
+.Carousel-dot ul {
+  width: 110px;
+  height: 12px;
+  position: absolute;
+  bottom: 25px;
+  left: 45%;
+}
+
+.Carousel-dot li {
+  width: 12px;
+  height: 12px;
+  border-radius: 6px;
+  float: left;
+  list-style: none;
+  margin-right: 15px;
+  background: #fff;
+}
