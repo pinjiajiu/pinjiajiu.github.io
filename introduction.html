@@ -194,7 +194,19 @@ $('.nav-pills li').click(function() {
   ind = $(this).index('.nav-pills li');
   $('.daohang ul').eq(ind).stop().show();
   $('.daohang ul').not($('.daohang ul').eq(ind)).stop().hide();
+  var Top = parseInt(document.documentElement.clientHeight) - 90
+  var DTop = parseInt(document.documentElement.scrollHeight)
+  if(Top >= DTop-90){
+    $('.footer').css({ 'position': 'absolute', 'top': Top + 'px' })
+  }else{
+    $('.footer').css({ 'position': 'relative','top':0})
+  }
 });
+var Top = parseInt(document.documentElement.clientHeight) - 90
+var DTop = parseInt(document.documentElement.scrollHeight)
+if(Top >= DTop-90){
+  $('.footer').css({ 'position': 'absolute', 'top': Top + 'px' })
+}
 </script>
 
 </html>
