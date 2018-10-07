@@ -11,7 +11,7 @@
 }
 
 .Carousel-img img {
-  height: 400;
+  height: 400px;
   width: 100%;
   position: absolute;
   top: 0;
@@ -23,7 +23,7 @@
   width: 24px;
   height: 50px;
   position: absolute;
-  top: 185px;
+  top: 180px;
   opacity: 0.5;
   cursor: pointer;
 }
