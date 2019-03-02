@@ -109,12 +109,24 @@ body {
 }
 
 .content-price {
-  float: right;
   font-weight: bold;
-  font-size: 16px;
-  color: #d39f33!important;
+  padding-top: 10px !important;
 }
-
+.content-price span{
+  margin-right: 5px;
+  font-size: 14px;
+  color: #8f0002;
+}
+.saoma{
+  color: #666 !important;
+}
+.saoma span{
+  color: #666 !important;
+}
+.content-price span span{
+  color: red;
+  font-size:16px;
+}
 .title-nav {
   position: relative;
   margin-top: 5px;
@@ -268,7 +280,7 @@ h3.page-header {
   bottom: -85px;
   width: 200px;
   height: 260px;
-  background: url(../../images/weixin.jpg) no-repeat;
+  background: url(../../images/company/gongsi.jpg) no-repeat;
   background-size: 100% 100%;
 }
 
