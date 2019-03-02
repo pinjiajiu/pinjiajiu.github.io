@@ -1,17 +1,17 @@
 .Carousel {
   width: 100%;
-  height: 400px;
+  height: 500px;
   background: #ccc;
   position: relative;
 }
 
 .Carousel-img {
   width: 100%;
-  height: 400px;
+  height: 500px;
 }
 
 .Carousel-img img {
-  height: 400px;
+  height: 500px;
   width: 100%;
   position: absolute;
   top: 0;
