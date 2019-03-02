@@ -30,22 +30,27 @@ body {
   background: url('../../images/bg.jpg');
 }
 .top{
-  height: 100px;
+  height: 130px;
   background: #9c061b;
   font-family: '楷体', serif;
   color: #f2eb30;
 }
 .top .name{
-  line-height: 100px;
-  font-size: 34px;
+  padding-top: 30px;
+  line-height: 42px;
+  font-size: 38px;
   font-weight: bold;
   float: left;
 }
+.top .En{
+  line-height: 40px;
+  font-size: 22px
+}
 .top .tuijian{
-  line-height: 28px;
+  line-height: 35px;
   float: right;
-  padding-top: 20px;
-  font-size: 20px;
+  padding-top: 40px;
+  font-size: 24px;
 }
 .Navbar {
   border: 0;
